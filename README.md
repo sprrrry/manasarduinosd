@@ -32,5 +32,5 @@ The amplifier is used to increase the current of the signal so that it can drive
 Arduino Mega is used as the brain for the whole project. It was used instead of Arduino Uno because the code required more memory than available in arduino uno. The code could be modified a bit to fit in Uno but that could reduce the stability and functionality.
 
 ## Simulation
-![This is Proteus Simulation](https://ibb.co/gRT0Khy)
+![This is Proteus Simulation](https://www.linkpicture.com/q/Screenshot-2022-02-01-114313.png)
 
