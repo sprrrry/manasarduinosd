@@ -9,7 +9,7 @@ This function of this project is to read wav files from a sd card and play it ou
 
 ## Components 
 * **R-2R Ladder** (as a DAC) </br>
-R-2R Ladder has been used here because it is easy to use and cheap as well. It will not give the highest audio quality but it is good enough for this project.
+DAC stands for "digital to analog converter." Since the Arduino does not have analog out capabilities, we need to use a DAC to convert digital data (numbers/ints/bytes) to an analog waveform (oscillating voltage). The resistor ladder used in this project is an 8-bit DAC, this means it can produce 256 (2^8) different voltage levels between 0 and 5v.  R-2R Ladder has been used here because it is easy to use and cheap as well. It will not give the highest audio quality but it is good enough for this project.
 
 * **Low Pass Filter** </br>
 The purpose of a low pass filter is to smooth out the output of the DAC in order to reduce noise.  By using a low pass filter on the signal, you can smooth out the "steps" in your waveform while keeping the overall shape of the waveform intact. A simple RC flow pass filter is used to achieve this: with a resistor and a capacitor. This filtered signal is then sent into another buffer circuit (op amp in a voltage follower configuration) to protect the filtered signal from any loads further down in the circuit. 
